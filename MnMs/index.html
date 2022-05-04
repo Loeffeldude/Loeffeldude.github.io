@@ -54,9 +54,9 @@
     var buildUrl = "Build";
     var loaderUrl = buildUrl + "/MnMs.loader.js";
     var config = {
-      dataUrl: buildUrl + "/MnMs.data.gz",
-      frameworkUrl: buildUrl + "/MnMs.framework.js.gz",
-      codeUrl: buildUrl + "/MnMs.wasm.gz",
+      dataUrl: buildUrl + "/MnMs.data",
+      frameworkUrl: buildUrl + "/MnMs.framework.js",
+      codeUrl: buildUrl + "/MnMs.wasm",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
       productName: "MnMs",
@@ -78,8 +78,8 @@
       config.devicePixelRatio = 1;
       unityShowBanner('WebGL builds are not supported on mobile devices.');
     } else {
-      canvas.style.width = "960px";
-      canvas.style.height = "600px";
+      canvas.style.width = "100%";
+      canvas.style.height = "100%";
     }
     loadingBar.style.display = "block";
 
